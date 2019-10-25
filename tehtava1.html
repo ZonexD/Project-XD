@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XD</title>
+    <script src="jquery.js">
+    </script>
+    <style>
+        p {
+            padding: 15px;
+            background-color: blueviolet;
+        }
+    </style>
+<script type="text/javascript">
+    //esimerkki
+    $(document).ready(function(){
+        //Piilota
+        $(".piilo-nappi").click(function(){
+            $("p.Eniten").hide();
+            $("p.Tavallinen").hide(100);
+            $("p.Hyvin").hide(1000);
+            $("p.Vähän").hide(50);
+            $("p.Vähiten").hide(2000);
+            window.alert("Teksti piiotettu");
+        });
+    
+        //näytä
+        $(".esiin-nappi").click(function(){
+            $("p.Eniten").show();
+            $("p.Tavallinen").show(100);
+            $("p.Hyvin").show(1000);
+            $("p.Vähän").show(50);
+            $("p.Vähiten").show(2000);
+            window.alert("Teksti näkyy");
+        });
+    });
+    </script>
+</head>
+<body>
+    <button type="button" class="piilo-nappi">Piilota</button>
+    <button type="button" class="esiin-nappi">Näytä</button>
+        <p class="Eniten">Erittäin NOOB</p>
+        <p class="Tavallinen">NOOB</p>
+        <p class="Hyvin">Todella NOOB</p>
+        <p class="Vähän">Ei ole noob</p>
+        <p class="Vähiten">Pro</p>
+</body>
+</html>

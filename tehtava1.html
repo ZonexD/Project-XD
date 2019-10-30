@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css" type="text/css">    
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="Yleiset.css" type="text/css">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,21 +20,21 @@
     $(document).ready(function(){
         //Piilota
         $(".piilo-nappi").click(function(){
-            $("p.Eniten").hide();
-            $("p.Tavallinen").hide(100);
-            $("p.Hyvin").hide(1000);
-            $("p.Vähän").hide(50);
-            $("p.Vähiten").hide(2000);
+            $("p.Eniten").hide(1000);
+            $("p.Tavallinen").hide(1500);
+            $("p.Hyvin").hide(2000);
+            $("p.Vähän").hide(2500);
+            $("p.Vähiten").hide(3000);
             window.alert("Teksti piiotettu");
         });
     
         //näytä
         $(".esiin-nappi").click(function(){
-            $("p.Eniten").show();
-            $("p.Tavallinen").show(100);
-            $("p.Hyvin").show(1000);
-            $("p.Vähän").show(50);
-            $("p.Vähiten").show(2000);
+            $("p.Eniten").show(1000);
+            $("p.Tavallinen").show(1500);
+            $("p.Hyvin").show(2000);
+            $("p.Vähän").show(2500);
+            $("p.Vähiten").show(3000);
             window.alert("Teksti näkyy");
         });
     });
@@ -45,6 +46,7 @@
         <li><a href="index.html">Koti</a></li>
         <li><a href="Tehtava.html">Tehtävä</a></li>
         <li><a href="tehtava1.html">Tehtävä 2</a></li>
+        <li><a href="Animaatio.html">Animaatio</a></li>
         </header> <br><br>
     </div>
     <div class="Nappulat1">

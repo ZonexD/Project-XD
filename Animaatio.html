@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Yleiset.css" type="text/css">
+<link rel="stylesheet" href="Animaatio.css" type="text/css">
+<meta charset="UTF-8">
+<title>Animaatiosivu</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".Aloita-nappi").click(function(){
+        $(".box")
+            .animate({width: "500px"})
+            .animate({height: "500px"})
+            .animate({marginLeft: "300px"})
+            .animate({borderWidth: "20px"})
+            .animate({opacity: 0.5});
+    });
+    $(".Palauta-nappi").click(function(){
+        $(".box")
+            .animate({opacity: 1})
+            .animate({borderWidth: "5px"})
+            .animate({marginLeft: "0px"})
+            .animate({height: "200px"})
+            .animate({width: "200px"});    
+    });
+});
+</script>
+</head>
+<body>
+<footer>
+<header>
+    <div class="row">
+        <ul class="main-nav">
+            <li><a href="index.html">Koti</a></li>
+            <li><a href="Tehtava.html">Tehtävä</a></li>
+            <li><a href="tehtava1.html">Tehtävä 2</a></li>
+            <li><a href="Animaatio.html">Animaatio</a></li>
+</header> <br> <br> <br>
+</footer>
+    <button type="button" class="Aloita-nappi">Aloita Animaatio</button>
+    <button type="button" class="Palauta-nappi">Palauta Animaatio</button>
+    <div class="box"><img src="images/pepega.jpg" class="pepega"></a></div>
+</body>
+</html>       

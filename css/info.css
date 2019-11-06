@@ -1,0 +1,22 @@
+p {
+    padding: 50px;
+    display: block;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main {
+    width: 200px;
+    border: 1px dotted black;
+  }
+  h3 {
+    margin: 1px;
+    display: inline-block;
+    color: aliceblue;
+  }

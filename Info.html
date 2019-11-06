@@ -2,27 +2,15 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/Yleiset.css" type="text/css">
+<link rel="stylesheet" href="css/info.css" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
+  $("button").click(function(){
+    $("p").toggle();
   });
 });
 </script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
 </head>
 <body>
 	<div class="row1">
@@ -33,8 +21,9 @@ $(document).ready(function(){
             <li><a href="Animaatio.html">Animaatio</a></li>
             <li><a href="Info.html">Info</a></li>
 <br> <br> <br>
-<div id="flip">Click to slide the panel down or up</div>
-<div id="panel">Hello world!</div>
-
+<div id="main" style="width: 100%;">
+  <h3 style="text-align: center;">NOOB</h3> <button>Toggle Wallhacks</button>
+</div>
+  <p>fun and interesting text so I hope you read this all the way...</p>
 </body>
 </html>

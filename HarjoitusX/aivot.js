@@ -27,8 +27,8 @@ function yhteystietoFunktio() {
     var y = ["Nimi: " , "Email: " , "Puh: "];
     var text = "";
     var i;
-    for (i = 2; i >= 0; i--) {
-      text += y[i] + x.elements[i].value + "<br>";
+    for (i = x.length-1; i >= 0; i--) {
+      text += x.elements[i].value + "<br>";
     }
     document.getElementById("yhteystiedotTuloste").innerHTML = text;
   }

@@ -32,7 +32,36 @@ function yhteystietoFunktio() {
     }
     document.getElementById("yhteystiedotTuloste").innerHTML = text;
   }
-  function palautusFunktio(boxNumber){
-      alert("Palautetaan nettisivu alkuperäiseen tilaan napilla" + boxNumber);
-      document.location.reload();
+    function palautusFunktio(boxNumber){
+        alert("Palautetaan nettisivu alkuperäiseen tilaan napilla" + boxNumber);
+        document.location.reload();
   }
+    function Dia() {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "XD"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "doughnut",
+			dataPoints: [
+				{ label: "Apina",  y: 267  },
+				{ label: "Kirahvi", y: 124  },
+				{ label: "Leijona", y: 45  },
+				{ label: "Tiikeri",  y: 12  },
+				{ label: "Virtahepo",  y: 17  }
+			]
+		}
+        ]
+    });
+	chart.render();
+}
+function Dia1() {
+    var chart = document.getElementById("chartContainer");
+    if (chart.style.display === "block") {
+    chart.style.display = "none";
+    } else {
+    chart.style.display = "block";
+    }
+}
